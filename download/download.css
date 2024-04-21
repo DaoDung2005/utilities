@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body {
+      background: #000000;
+      font-family: Arial, Helvetica, sans-serif;
+      
+  }
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+   
+    font-variation-settings: 'FILL' 1, 'wght' 150, 
+  
+      
+}
+
+.Top-bar{
+    /*background-color: rgb(0, 0, 0);*/
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    
+    display: flex; /* Sử dụng flexbox */
+    justify-content: space-between; /* Canh đều các phần tử */
+    
+}
+
+.button {
+    display: inline-block;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    
+  }
+  /* CSS cho hover */
+  .button:hover {
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    color: #fff;
+  }
+  /* CSS cho biểu tượng */
+  .material-icons {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  /* CSS cho văn bản */
+  .button-text {
+    vertical-align: middle;
+  }
+  .img_logo{
+    height: 48px;
+    border-radius: 48px;
+    border: 2px solid #ffffff;
+  }
+
+  .app-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các mục chuyển sang hàng mới khi không đủ không gian */
+  }
+  .app-item {
+  color: #fff;
+  background-color: #000;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid #fff; /* Viền màu đen */
+    border-radius: 5px; /* Bo tròn góc */
+    margin-right: 5px; /* Khoảng cách giữa các ứng dụng */
+    margin-bottom: 5px; /* Khoảng cách dưới của mỗi ứng dụng */
+    box-sizing: border-box; /* Bao gồm border và padding trong tổng chiều rộng */
+    width: calc(50% - 15px); /* Mỗi cột chiếm 50% chiều rộng và trừ đi khoảng cách */
+    position: relative; /* Cho phép đặt vị trí tương đối cho icon tải xuống */
+  }
+  .app-item a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    
+    color: inherit; /* Sử dụng màu chữ mặc định */
+  }
+  .app-item:hover {
+    background-color: rgb(255, 255, 255);
+    
+    color: #000; /* Màu nền khi di chuột qua */
+  }
+  .app-icon {
+    
+    height: 48px;
+    border-radius: 48px;
+    margin: 0 15px 0 0;
+    box-shadow: 0 0 0 2px rgb(255, 255, 255);
+    
+    
+  }
+  
+  .app-list :hover img {
+    box-shadow: 0 0 0 2px rgb(0, 0, 0);
+
+    
+   
+    
+  }
+  .app-name {
+    font-size: 18px;
+    font-weight: bold;
+    flex-grow: 1; /* Mở rộng để đẩy biểu tượng tải xuống ra phía bên phải */
+  }
+ 
+  .material-icons {
+    vertical-align: middle; /* Canh giữa biểu tượng */
+  }
+
+  /* Media query cho màn hình nhỏ hơn */
+  @media screen and (max-width: 600px) {
+    .app-item {
+      width: 100%; /* Mỗi cột chiếm 100% chiều rộng trên màn hình nhỏ hơn */
+    }
+  }
+
